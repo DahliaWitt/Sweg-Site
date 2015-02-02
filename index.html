@@ -1,0 +1,53 @@
+<html lang = "en">
+	<head>
+		<title> frosted tips </title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	</head>
+	<body background = "deep.gif" onload="updateTitle()">
+		
+<h1 id="rbTitle">
+      W3LC0M3 T0 MEH SWEG SITE
+    </h1>
+		<marquee><strong>Please enjoy your stay</strong></marquee> <br />
+    <script type="text/javascript">
+      var title = "W3LC0M3 T0 MEH SWEG SITE";
+      var h1 = document.getElementById("rbTitle");
+      var color = new Array("red", "orange", "yellow", "green", "blue", "indigo", "violet");
+      var parentCounter = 0;
+      function updateTitle(){
+        var coloredTitle = "";
+        var counter = 0+parentCounter;
+        for(i=0; i<title.length; i++){
+          coloredTitle += title.charAt(i).fontcolor(color[counter]);
+          counter++;
+          if(counter >= 7){
+            counter = 0;
+          }
+        }
+        h1.innerHTML = coloredTitle;
+        parentCounter--;
+        if(parentCounter <= 0){
+          parentCounter = 7;
+        }
+        setTimeout('updateTitle()', 100);
+      }
+    </script>
+		<!-- hitwebcounter Code START -->
+	</br>
+	<a href = "index.php.html"> <img src = "colors.gif" alt = "mmm"> </a>
+	</br>
+	<h2>Navigation:</h2><br />
+	<a>Ratings</a><br />
+	<a href="http://rustledjimmies.com/">Click Here if Your Jimmies are Rustled</a> <br />
+	<a href="2spooky/index.htm">2spooky4me</a><br />
+	<br />
+	<img src="aw20.gif" alt="UNDER CONSTRUCTION">
+		
+		
+
+</br>
+<img src="http://hitwebcounter.com/counter/counter.php?page=5970949&style=0015&nbdigits=5&type=page&initCount=0" title="so many views" Alt="so many views!"   border="0" >
+<br/>
+
+	</body>
+</html>
